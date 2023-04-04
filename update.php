@@ -9,7 +9,7 @@ $Modelo=$_POST['Modelo'];
 $Color=$_POST['Color'];
 $Precio=$_POST['Precio'];
 
-$sql="UPDATE agencia Marca='$Marca',Modelo='$Modelo',Color='$Color',Precio='$Precio' WHERE Num_Serie='$Num_Serie'";
+$sql="UPDATE vehiculo SET Marca='$Marca',Modelo='$Modelo',Color='$Color',Precio='$Precio' WHERE Num_Serie='$Num_Serie'";
 $query=mysqli_query($con,$sql);
 
     if($query){
